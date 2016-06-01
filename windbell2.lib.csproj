@@ -91,21 +91,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Base64.cs" />
-    <Compile Include="BoolAny.cs" />
-    <Compile Include="DateTimeEx.cs" />
-    <Compile Include="EF.cs" />
-    <Compile Include="ImageHelper.cs" />
-    <Compile Include="JsonNetPlus.cs" />
-    <Compile Include="JsonNetResult.cs" />
-    <Compile Include="myFile.cs" />
-    <Compile Include="myJson.cs" />
-    <Compile Include="myJwt.cs" />
+    <Compile Include="CSharp\Base64.cs" />
+    <Compile Include="CSharp\BoolAny.cs" />
+    <Compile Include="CSharp\DateTimeEx.cs" />
+    <Compile Include="CSharp\EF.cs" />
+    <Compile Include="CSharp\ImageHelper.cs" />
+    <Compile Include="CSharp\JsonNetPlus.cs" />
+    <Compile Include="CSharp\JsonNetResult.cs" />
+    <Compile Include="CSharp\myFile.cs" />
+    <Compile Include="CSharp\myJson.cs" />
+    <Compile Include="CSharp\myJwt.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RenderViewHelper.cs" />
-    <Compile Include="staticString.cs" />
-    <Compile Include="UploadController.cs" />
-    <Compile Include="VerificationCode.cs">
+    <Compile Include="CSharp\RenderViewHelper.cs" />
+    <Compile Include="CSharp\staticString.cs" />
+    <Compile Include="CSharp\UploadController.cs" />
+    <Compile Include="CSharp\VerificationCode.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
