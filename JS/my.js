@@ -1,3 +1,33 @@
+/*
+获取url参数为json
+直接操作此json
+通过toString或+号运算符转为url参数形式的string (带?号)
+*/
+function getMyUrlParam() {
+
+    var s = self.location.search.replace("?", "");
+    var param = {};
+    param.__proto__.toString = function () {
+        var v = [];
+        for (var p in this) {
+            if (this[p] != "" && this[p] != null)
+                v.push(p + "=" + this[p]);
+        }
+        if (v.length!==0) { return "?" + v.join("&"); }
+        return "";
+    };
+    if (s != "") {
+        s.split("&").forEach(function (v, i) {
+            var p = v.split("=");
+            if (p.length > 1) {
+                param[p[0]] = p[1];
+            }
+        })
+    }
+    return param;
+
+}
+
 
 //浅表合并Json(Object)
 var JsonExtend = function (target, obj) {
